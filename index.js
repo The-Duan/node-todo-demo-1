@@ -66,7 +66,7 @@ function askForCreateTask(list) {
         message: "输入任务标题",
     }).then(answer => {
         list.push({
-            tile: answer.title,
+            title: answer.title,
             done: false
         })
         db.write(list)
